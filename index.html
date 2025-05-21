@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Organization | Official Site</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(135deg, #6e48aa, #9d50bb);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 20px;
+        }
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .project-card {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            text-align: center;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+        .project-card a {
+            text-decoration: none;
+            color: #6e48aa;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+            background: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Your Organization</h1>
+        <p>Welcome to our official GitHub Pages site!</p>
+    </header>
+
+    <div class="container">
+        <h2>Our Projects</h2>
+        <div class="projects">
+            <div class="project-card">
+                <h3><a href="/onehtml-games">OneHTML Games</a></h3>
+                <p>シンプルな1ファイル静的HTMLゲーム集</p>
+            </div>
+            <div class="project-card">
+                <h3><a href="/Aubird">Aubird</a></h3>
+                <p>Cookieで動く2FAオートメーター(β)</p>
+            </div>
+            <div class="project-card">
+                <h3><a href="/homo">悪臭数字生成器</a></h3>
+                <p>すべての数式を114514を用いた数式に変換します</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Your Organization. All rights reserved.</p>
+    </footer>
+</body>
+</html>
